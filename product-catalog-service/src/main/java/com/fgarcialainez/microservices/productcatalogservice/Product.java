@@ -1,5 +1,7 @@
 package com.fgarcialainez.microservices.productcatalogservice;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "product")
 public class Product {
     private String id;
     private String title;
